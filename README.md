@@ -4,8 +4,8 @@
 
 This project performs end-to-end **data engineering** and **data analysis** using the **Brazilian E-Commerce Olist dataset** (from Kaggle). Implemented entirely in **PySpark on Databricks**, it covers data cleaning, enrichment, analytical modeling, and customer insights such as **CLV**, **top products**, **funnel drop-off**, and more.
 
----
 
+ 
 ## 📂 Datasets Used
 
 This project uses all **9 CSV files** from the [Olist Kaggle dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce):
@@ -20,7 +20,7 @@ This project uses all **9 CSV files** from the [Olist Kaggle dataset](https://ww
 8. `olist_order_reviews_dataset.csv`
 9. `olist_geolocation_dataset.csv`
 
----
+ 
 
 ## ✅ Project Steps Overview
 
@@ -31,7 +31,7 @@ This project uses all **9 CSV files** from the [Olist Kaggle dataset](https://ww
   - `order_id`, `product_id`, `customer_id`, `seller_id`
 - Used `inner`, `left`, and `outer` joins depending on context
 
----
+ 
 
 ### 🧹 2. Data Cleaning
 
@@ -41,7 +41,7 @@ This project uses all **9 CSV files** from the [Olist Kaggle dataset](https://ww
   - Filled optional values with `0`, `"Unknown"`, or column averages
 - Converted and formatted timestamp and numeric fields for consistency
 
----
+ 
 
 ### 🔍 3. Exploratory Data Analysis (EDA)
 
@@ -72,8 +72,9 @@ This project uses all **9 CSV files** from the [Olist Kaggle dataset](https://ww
 - Seller and product-level revenue analysis
 - Aggregated by state and seller_id
 
+
+
 ---
- ---
 
 ## 💻 Environment & Tools
 
@@ -83,14 +84,14 @@ This project uses all **9 CSV files** from the [Olist Kaggle dataset](https://ww
 | **PySpark**   | All transformations & analysis        |
 | **DBFS**      | File storage (`/FileStore/tables`)    |
 | **Kaggle**    | Public source of raw data             |
-
----
+ 
 
 ## 📈 Future Work
 
 - Churn prediction using PySpark MLlib
 - Create Databricks dashboards
 - Schedule ETL pipelines with Databricks Jobs
-- Export data for downstream ML/BI systems
+- Export data for downstream ML/BI systems.
+- 
 
 ---
